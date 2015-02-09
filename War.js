@@ -9,6 +9,10 @@ var shuffle = function(){
     deck[currentIndex] = deck[randomIndex];
     deck[randomIndex] = temporaryValue;
   }
-  console.log(deck);
+	var userDeck = deck.slice(0, 26);
+	console.log(userDeck);
+	var computerDeck = deck.slice(26, 52);
+	console.log(computerDeck);
 }
 shuffle(deck);
+
