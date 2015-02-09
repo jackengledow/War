@@ -1,13 +1,13 @@
 .cardDiv {
-	height: 290px;
-	width: 220px;
+	height: 384px;
+	width: 256px;
 	border-style: solid;
-	border-width: 5px;
+	border-width: 2px;
 	border-color: black;
 }
 .bigDiv {
-	margin-left: 145px;
 	display: inline-block;
+	text-align: center;
 }
 .number {
 	background-color: red;
@@ -22,7 +22,6 @@
 }
 .buttonDiv{
 	display: inline-block;
-	margin-left: 90px;
 	height: 90px;
 	width: 195px;
 
