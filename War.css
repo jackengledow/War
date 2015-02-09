@@ -1,16 +1,15 @@
-.containerDiv {
-	text-align: center;
-}
 .cardDiv {
 	height: 384px;
 	width: 256px;
 	border-style: solid;
 	border-width: 2px;
 	border-color: black;
+	margin: auto;
 }
 .bigDiv {
 	display: inline-block;
 	text-align: center;
+	width: 33%;
 }
 .number {
 	background-color: red;
@@ -18,14 +17,14 @@
 	width: 50px;
 }
 .drawButton {
-	height: 90px;
-	width: 195px;
+	height: 140px;
+	width: 280px;
 	font-size: 60px;
-	vertical-align: middle;
+	vertical-align: top;
+	margin-top: 35%;
 }
 .buttonDiv{
 	display: inline-block;
-	height: 90px;
-	width: 195px;
-
+	width: 33%;
+	text-align: center;
 }
