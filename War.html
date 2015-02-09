@@ -1,14 +1,33 @@
+<!DOCTYPE html>
 <html>
 	<head>
-		<title>Do You Want to Play a Game?</title>
+		<title>War: The Traditional Card Game</title>
 		<link rel="stylesheet" type="text/css" href="War.css">
 	</head>
 	<body>
-		<center><div>
-				<div id="computerCard" class="cardDiv">
+
+			<div>
+				<div id="computerCardDiv" class="bigDiv">
+					<h1>The Computer Drew:</h1>
+					<div id="computerCard" class="cardDiv">
+						<div id="computerNumberPlace" class="number">
+						</div>
+					</div>
 				</div>
-				<div id="userCard" class="cardDiv">
+				
+				<div class="buttonDiv">
+						<button class="drawButton" onclick="draw()">Draw</button>
 				</div>
-		</div></center>
+				
+				
+				<div id="userCardDiv" class="bigDiv">
+					<h1>You Drew:</h1>
+					<div id="userCard" class="cardDiv">
+						<div id="userNumberPlace" class="number">
+						</div>
+					</div>
+				</div>
+			</div>
+				
 	</body>
 </html>
