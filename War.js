@@ -40,3 +40,19 @@ var shuffle = function(){
 }
 shuffle(deck);
 
+
+
+
+
+
+
+//Alec is working :>
+
+function = restart() {
+	shuffle(deck);
+	document.getElementById("default").style.display = "block";
+	document.getElementById("win").style.display = "none";
+	document.getElementById("lose").style.display = "none";
+	document.getElementById("tie").style.display = "none";
+}
+
