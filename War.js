@@ -5,8 +5,6 @@ var A = 14;
 var j;
 var o;
 var deck = [ A, A, A, A, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 6, 6, 6, 6, 7, 7, 7, 7, 8, 8, 8, 8, 9, 9, 9, 9, 10, 10, 10, 10, J, J, J, J, Q, Q, Q, Q, K, K, K, K];
-var userDeck = deck.slice(0, 26);
-var computerDeck = deck.slice(26, 52);
 var i;
 
 var shuffle = function(){
@@ -48,7 +46,7 @@ shuffle(deck);
 
 //Alec is working :>
 
-function = restart() {
+var restart = function() {
 	shuffle(deck);
 	document.getElementById("default").style.display = "block";
 	document.getElementById("win").style.display = "none";
