@@ -23,10 +23,10 @@ shuffle(deck);
 var draw = function(){
 	var userDeck = deck.slice(0, 26);
 	console.log(userDeck);
-	console.log(userDeck[0]);
+	console.log(userDeck[i]);
 	var computerDeck = deck.slice(26, 53);
 	console.log(computerDeck);
-	console.log(computerDeck[0]);
+	console.log(computerDeck[i]);
 	i++;
 	if (computerDeck[i] > userDeck[i]){
 		console.log("lose");
