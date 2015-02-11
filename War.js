@@ -76,13 +76,27 @@ var draw = function(){
 	console.log(computerDeck[i]);
 	if (computerDeck[i] > userDeck[i]){
 		console.log("lose");
-		//add background color changers
+		document.getElementById("whole").style.backgroundColor = "red";
+		document.getElementById("lose").style.display = "block";
+		document.getElementById("win").style.display = "none";
+		document.getElementById("tie").style.display = "none";
+		document.getElementById("default").style.display = "none";
 	}
 	else if (computerDeck[i] < userDeck[i]){
 		console.log("win");
+		document.getElementById("whole").style.backgroundColor = "green";
+		document.getElementById("win").style.display = "block";
+		document.getElementById("lose").style.display = "none";
+		document.getElementById("tie").style.display = "none";
+		document.getElementById("default").style.display = "none"
 	}
 	else if (computerDeck[i] = userDeck[i]){
 		console.log("tie");
+		document.getElementById("whole").style.backgroundColor = "black";
+		document.getElementById("tie").style.display = "block";
+		document.getElementById("win").style.display = "none";
+		document.getElementById("lose").style.display = "none";
+		document.getElementById("default").style.display = "none"
 	}
 	i++;
 }

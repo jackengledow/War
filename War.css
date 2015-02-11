@@ -84,17 +84,20 @@
 .nined {
 	background-position: -1792px 0px;
 }
-.jackd {
+.tend {
 	background-position: -2048px 0px;
 }
-.queend {
+.Jd {
 	background-position: -2304px 0px;
 }
-.kingd {
+.Qd {
 	background-position: -2560px 0px;
 }
-.aced {
+.Kd {
 	background-position: -2816px 0px;
+}
+.Ad {
+	background-position: -3072px 0px;
 }
 
 .twoh {
@@ -121,17 +124,20 @@
 .nineh {
 	background-position: -1792px -384px;
 }
-.jackh {
+.tenh {
 	background-position: -2048px -384px;
 }
-.queenh {
+.Jh {
 	background-position: -2304px -384px;
 }
-.kingh {
+.Qh {
 	background-position: -2560px -384px;
 }
-.aceh {
+.Kh {
 	background-position: -2816px -384px;
+}
+.Ah {
+	background-position: -3072px -384px;
 }
 
 .twos {
@@ -158,17 +164,20 @@
 .nines {
 	background-position: -1792px -768px;
 }
-.jacks {
+.tens {
 	background-position: -2048px -768px;
 }
-.queens {
+.Js {
 	background-position: -2304px -768px;
 }
-.kings {
+.Qs {
 	background-position: -2560px -768px;
 }
-.aces {
+.Ks {
 	background-position: -2816px -768px;
+}
+.As {
+	background-position: -3072px -768px;
 }
 
 .twoc {
@@ -195,15 +204,18 @@
 .ninec {
 	background-position: -1792px -1152px;
 }
-.jackc {
+.tenc {
 	background-position: -2048px -1152px;
 }
-.queenc {
+.Jc {
 	background-position: -2304px -1152px;
 }
-.kingc {
+.Qc {
 	background-position: -2560px -1152px;
 }
-.acec {
+.Kc {
 	background-position: -2816px -1152px;
+}
+.Ac {
+	background-position: -3072px -1152px;
 }
