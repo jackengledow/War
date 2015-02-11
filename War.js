@@ -20,6 +20,7 @@ var shuffle = function(){
 	var computerDeck = deck.slice(26, 53);
 }
 shuffle(deck);
+
 var draw = function(){
 	var userDeck = deck.slice(0, 26);
 	console.log(userDeck);
@@ -39,9 +40,6 @@ var draw = function(){
 	}
 }
 draw(deck);
-
-
-
 
 
 
