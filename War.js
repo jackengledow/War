@@ -28,18 +28,17 @@ var draw = function(){
 	var computerDeck = deck.slice(26, 53);
 	console.log(computerDeck);
 	console.log(computerDeck[i]);
-	i++;
 	if (computerDeck[i] > userDeck[i]){
 		console.log("lose");
 	}
 	else if (computerDeck[i] < userDeck[i]){
 		console.log("win");
 	}
-	else if (computerDeck[i] === userDeck[i]){
+	else if (computerDeck[i] = userDeck[i]){
 		console.log("tie");
 	}
+	i++;
 }
-draw(deck);
 
 
 
