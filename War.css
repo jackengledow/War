@@ -1,10 +1,8 @@
 .cardDiv {
 	height: 384px;
 	width: 256px;
-	border-style: solid;
-	border-width: 2px;
-	border-color: black;
 	margin: auto;
+	background-image: url("deck2.png");
 }
 .bigDiv {
 	display: inline-block;
@@ -61,4 +59,151 @@
 .whole {
 	background-color: #000066;
 	color: white;
+}
+.twod {
+	background-position: 0px 0px;
+}
+.threed {
+	background-position: -256px 0px;
+}
+.fourd {
+	background-position: -512px 0px;
+}
+.fived {
+	background-position: -768px 0px;
+}
+.sixd {
+	background-position: -1024px 0px;
+}
+.sevend {
+	background-position: -1280px 0px;
+}
+.eightd {
+	background-position: -1536px 0px;
+}
+.nined {
+	background-position: -1792px 0px;
+}
+.jackd {
+	background-position: -2048px 0px;
+}
+.queend {
+	background-position: -2304px 0px;
+}
+.kingd {
+	background-position: -2560px 0px;
+}
+.aced {
+	background-position: -2816px 0px;
+}
+
+.twoh {
+	background-position: 0px -384px;
+}
+.threeh {
+	background-position: -256px -384px;
+}
+.fourh {
+	background-position: -512px -384px;
+}
+.fiveh {
+	background-position: -768px -384px;
+}
+.sixh {
+	background-position: -1024px -384px;
+}
+.sevenh {
+	background-position: -1280px -384px;
+}
+.eighth {
+	background-position: -1536px -384px;
+}
+.nineh {
+	background-position: -1792px -384px;
+}
+.jackh {
+	background-position: -2048px -384px;
+}
+.queenh {
+	background-position: -2304px -384px;
+}
+.kingh {
+	background-position: -2560px -384px;
+}
+.aceh {
+	background-position: -2816px -384px;
+}
+
+.twos {
+	background-position: 0px -768px;
+}
+.threes {
+	background-position: -256px -768px;
+}
+.fours {
+	background-position: -512px -768px;
+}
+.fives {
+	background-position: -768px -768px;
+}
+.sixs {
+	background-position: -1024px -768px;
+}
+.sevens {
+	background-position: -1280px -768px;
+}
+.eights {
+	background-position: -1536px -768px;
+}
+.nines {
+	background-position: -1792px -768px;
+}
+.jacks {
+	background-position: -2048px -768px;
+}
+.queens {
+	background-position: -2304px -768px;
+}
+.kings {
+	background-position: -2560px -768px;
+}
+.aces {
+	background-position: -2816px -768px;
+}
+
+.twoc {
+	background-position: 0px -1152px;
+}
+.threec {
+	background-position: -256px -1152px;
+}
+.fourc {
+	background-position: -512px -1152px;
+}
+.fivec {
+	background-position: -768px -1152px;
+}
+.sixc {
+	background-position: -1024px -1152px;
+}
+.sevenc {
+	background-position: -1280px -1152px;
+}
+.eightc {
+	background-position: -1536px -1152px;
+}
+.ninec {
+	background-position: -1792px -1152px;
+}
+.jackc {
+	background-position: -2048px -1152px;
+}
+.queenc {
+	background-position: -2304px -1152px;
+}
+.kingc {
+	background-position: -2560px -1152px;
+}
+.acec {
+	background-position: -2816px -1152px;
 }
