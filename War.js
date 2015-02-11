@@ -88,7 +88,9 @@ var draw = function(){
 		document.getElementById("win").style.display = "block";
 		document.getElementById("lose").style.display = "none";
 		document.getElementById("tie").style.display = "none";
-		document.getElementById("default").style.display = "none"
+		document.getElementById("default").style.display = "none";
+		userDeck.push(computerDeck[i]);
+		console.log(userDeck);
 	}
 	else if (computerDeck[i] = userDeck[i]){
 		console.log("tie");
@@ -96,7 +98,7 @@ var draw = function(){
 		document.getElementById("tie").style.display = "block";
 		document.getElementById("win").style.display = "none";
 		document.getElementById("lose").style.display = "none";
-		document.getElementById("default").style.display = "none"
+		document.getElementById("default").style.display = "none";
 	}
 	i++;
 }
