@@ -39,7 +39,6 @@ var draw = function(){
 		console.log("tie");
 	}
 }
-draw(deck);
 
 
 
@@ -47,7 +46,7 @@ draw(deck);
 //Alec is working :>
 
 var restart = function() {
-	draw(deck);
+	shuffle(deck);
 	document.getElementById("default").style.display = "block";
 	document.getElementById("win").style.display = "none";
 	document.getElementById("lose").style.display = "none";
