@@ -76,6 +76,7 @@ var draw = function(){
 	console.log(computerDeck[i]);
 	if (computerDeck[i] > userDeck[i]){
 		console.log("lose");
+		//add background color changers
 	}
 	else if (computerDeck[i] < userDeck[i]){
 		console.log("win");
