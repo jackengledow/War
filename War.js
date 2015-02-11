@@ -52,5 +52,6 @@ var restart = function() {
 	document.getElementById("lose").style.display = "none";
 	document.getElementById("tie").style.display = "none";
 	document.getElementById("whole").style.backgroundColor = "#000066";
+	i = 0;
 }
 
