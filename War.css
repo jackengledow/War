@@ -221,12 +221,12 @@
 }
 
 .ComNumber {
-	display: inline-block;
-	font-size: 60px;
-	margin-left: 170px;
-}
-.UserNumber {
 	font-size: 60px;
 	display: inline-block;
 	margin-left: 750px;
+}
+.UserNumber {
+	display: inline-block;
+	font-size: 60px;
+	margin-left: 170px;
 }
