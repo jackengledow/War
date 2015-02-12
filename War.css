@@ -43,10 +43,10 @@
 }
 .resultText {
 	font-size: 45px;
-	margin-top: 100px;
 }
 .resultTextDiv {
 	text-align: center;
+	margin-top: -75px;
 }
 .buttonDiv2 {
 	text-align: center;
@@ -218,4 +218,15 @@
 }
 .Ac {
 	background-position: -3072px -1152px;
+}
+
+.ComNumber {
+	display: inline-block;
+	font-size: 60px;
+	margin-left: 170px;
+}
+.UserNumber {
+	font-size: 60px;
+	display: inline-block;
+	margin-left: 750px;
 }
