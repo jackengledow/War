@@ -9,30 +9,32 @@
 
 			<div class="bodyDefault" id="bodyDefault">				
 				<div id="userCardDiv" class="bigDiv">
-					<p class="cardText">You Drew:</p>
+					<h1 class="cardText">You Drew:</h1>
 					<div id="userCard" class="cardDiv twod">
 					</div>
 				</div>
 
 				<div class="buttonDiv">
-					<button class="simButton" onclick="simulation()">Sim</button>
-					<button class="drawButton" onclick="draw()">Draw</button>
+					<button class="drawButton" onclick="draw()" style="display: inline-block;">Draw</button>
+					<button class="simButton" onclick="simulation()" style="display: inline-block;">Sim</button>
 				</div>
 				
 				<div id="computerCardDiv" class="bigDiv">
-					<p class="cardText">The Computer Drew:</p>
+					<h1 class="cardText">The Computer Drew:</h1>
 					<div id="computerCard" class="cardDiv twoh">
 					</div>
 				</div>
 
 				<div>
 					<div class="UserNumber">
-				  	<p id="UserNumber">26</p>
+				  	<p id="UserNumber" class="CN">26</p>
 				  </div>
 					<div class="ComNumber">
-						<p id="ComNumber">26</p>
+						<p class="CN" id="ComNumber">26</p>
 					</div>
 				</div>
+
+	
 
 				<div class="resultTextDiv">
 					<p class="defaultText resultText" id="default">To begin, click Draw</p>

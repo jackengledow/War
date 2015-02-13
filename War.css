@@ -8,6 +8,7 @@
 	display: inline-block;
 	text-align: center;
 	width: 33%;
+	vertical-align: middle;
 }
 .number {
 	background-color: red;
@@ -17,21 +18,23 @@
 .drawButton {
 	height: 140px;
 	width: 280px;
+	margin-top: 20%;
 	font-size: 60px;
-	vertical-align: top;
-	margin-top: 35%;
 }
 .simButton {
-	height: 140px;
-	width: 280px;
-	font-size: 60px;
-	vertical-align: top;
-	margin-top: 35%;
+	height: 80px;
+	width: 160px;
+	font-size: 40px;
+	margin-top: 10%;
+}
+.simButtonDiv {
+	text-align: center;
 }
 .buttonDiv{
 	display: inline-block;
 	width: 33%;
 	text-align: center;
+	vertical-align: middle;
 }
 .cardText {
 	font-size: 25px;
@@ -226,7 +229,6 @@
 .Ac {
 	background-position: -3072px -1152px;
 }
-
 .ComNumber {
 	font-size: 60px;
 	display: inline-block;
