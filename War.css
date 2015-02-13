@@ -21,6 +21,13 @@
 	vertical-align: top;
 	margin-top: 35%;
 }
+.simButton {
+	height: 140px;
+	width: 280px;
+	font-size: 60px;
+	vertical-align: top;
+	margin-top: 35%;
+}
 .buttonDiv{
 	display: inline-block;
 	width: 33%;
