@@ -235,9 +235,19 @@
 }
 .bodyWin {
 	display: none;
-	background-color: green;
+	font-size: 75px;
+	text-align: center;
 }
 .bodyLose {
 	display: none;
-	background-color: red;
+	font-size: 75px;
+	text-align: center;
+}
+.playAgainButton {
+	font-size: 75px;
+	height: 150px;
+	width: 500px;
+}
+.space {
+	height: 125px;
 }
