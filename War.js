@@ -215,15 +215,17 @@ var playAgain = function() {
 }
 
 var simulation = function(){
-	var random = Math.random
+	var random = Math.random();
 	if (random <= .50){
-		document.getElementById("win").style.display = "block";
-		document.getElementById("lose").style.display = "none";
-		document.getElementById("default").style.display = "none";
+		document.getElementById("bodyWin").style.display = "block";
+		document.getElementById("bodyLose").style.display = "none";
+		document.getElementById("bodyDefault").style.display = "none";
+		document.getElementById("whole").style.backgroundColor = "green";
 	}
 	else if (random >= .51){
-		document.getElementById("win").style.display = "none";
-		document.getElementById("lose").style.display = "block";
-		document.getElementById("default").style.display = "none";
+		document.getElementById("bodyWin").style.display = "none";
+		document.getElementById("bodyLose").style.display = "block";
+		document.getElementById("bodyDefault").style.display = "none";
+		document.getElementById("whole").style.backgroundColor = "#ff0000";
 	}
 }
