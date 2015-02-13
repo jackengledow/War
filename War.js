@@ -78,13 +78,12 @@ var draw = function(){
 		var computerSuit = parseInt(("" + computerDeck).charAt(("" + computerDeck).length-1));
 		var userSuit = parseInt(("" + userDeck).charAt(("" + userDeck).length-1));
 		
-		console.log("comp suit = " + computerSuit);
+		console.log("comp suit = " + computerSuit + " which is " + suit[computerSuit]);
 
 		document.getElementById("computerCard").className = "cardDiv " + number[Math.floor(computerDeck[0])] + suit[computerSuit];
 		document.getElementById("userCard").className = "cardDiv " + number[Math.floor(userDeck[0])] + suit[userSuit];
 
 		if (Math.floor(computerDeck[0]) > Math.floor(userDeck[0]) || ((Math.floor(computerDeck[0]) == 2) && (Math.floor(userDeck[0]) == 14))){
-
 			console.log("lose");
 			document.getElementById("whole").style.backgroundColor = "red";
 			document.getElementById("lose").style.display = "block";
@@ -108,7 +107,6 @@ var draw = function(){
 		}
 
 		else if (Math.floor(computerDeck[0]) < Math.floor(userDeck[0]) || ((Math.floor(computerDeck[0]) == 14) && (Math.floor(userDeck[0]) == 2))){
-
 			console.log("win");
 			document.getElementById("whole").style.backgroundColor = "green";
 			document.getElementById("win").style.display = "block";
@@ -191,5 +189,19 @@ var restart = function() {
 	document.getElementById("userCard").className = "cardDiv twod";
 	document.getElementById("computerCard").className = "cardDiv twoh";
 	firstRun = true;
+}
+
+var simulation = function(){
+	var random = Math.random
+	if (random <= .50){
+		document.getElementById("win").style.display = "block";
+		document.getElementById("lose").style.display = "none";
+		document.getElementById("default").style.display = "none";
+	}
+	else if (random >= .51){
+		document.getElementById("win").style.display = "none";
+		document.getElementById("lose").style.display = "block";
+		document.getElementById("default").style.display = "none";
+	}
 }
 
