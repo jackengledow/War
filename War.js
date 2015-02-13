@@ -84,6 +84,7 @@ var draw = function(){
 		document.getElementById("userCard").className = "cardDiv " + number[Math.floor(userDeck[0])] + suit[userSuit];
 
 		if (Math.floor(computerDeck[0]) > Math.floor(userDeck[0]) || ((Math.floor(computerDeck[0]) == 2) && (Math.floor(userDeck[0]) == 14))){
+
 			console.log("lose");
 			document.getElementById("whole").style.backgroundColor = "red";
 			document.getElementById("lose").style.display = "block";
@@ -92,17 +93,22 @@ var draw = function(){
 			document.getElementById("default").style.display = "none";
 			computerDeck.push(userDeck[0]);
 			userDeck.shift();
+
 			var temp = computerDeck[0];
+
 			for (var i = 0; i < computerDeck.length - 1; i++){
 				computerDeck[i] = computerDeck[i+1];
 			}
+
 			computerDeck[computerDeck.length - 1] = temp;
 			console.log("userDeck After:\nLength is: " + userDeck.length + "\nContents: " + userDeck);
 			console.log("computerDeck After:\nLength is: " + computerDeck.length + "\nContents: " + computerDeck);
 			document.getElementById("ComNumber").innerHTML = computerDeck.length;
 			document.getElementById("UserNumber").innerHTML = userDeck.length;
 		}
+
 		else if (Math.floor(computerDeck[0]) < Math.floor(userDeck[0]) || ((Math.floor(computerDeck[0]) == 14) && (Math.floor(userDeck[0]) == 2))){
+
 			console.log("win");
 			document.getElementById("whole").style.backgroundColor = "green";
 			document.getElementById("win").style.display = "block";
@@ -111,27 +117,35 @@ var draw = function(){
 			document.getElementById("default").style.display = "none";
 			userDeck.push(computerDeck[0]);
 			computerDeck.shift();
+
 			var temp = userDeck[0];
+
 			for (var i = 0; i < userDeck.length - 1; i++){
 				userDeck[i] = userDeck[i+1];
 			}
+
 			userDeck[userDeck.length - 1] = temp;
 			console.log("userDeck After:\nLength is: " + userDeck.length + "\nContents: " + userDeck);
 			console.log("computerDeck After:\nLength is: " + computerDeck.length + "\nContents: " + computerDeck);
 			document.getElementById("ComNumber").innerHTML = computerDeck.length;
 			document.getElementById("UserNumber").innerHTML = userDeck.length;
 		}
+
 		else if (Math.floor(computerDeck[0]) == Math.floor(userDeck[0])){
+
 			console.log("tie");
 			document.getElementById("whole").style.backgroundColor = "black";
 			document.getElementById("tie").style.display = "block";
 			document.getElementById("win").style.display = "none";
 			document.getElementById("lose").style.display = "none";
 			document.getElementById("default").style.display = "none";
+
 			var temp = computerDeck[0];
+			
 			for (var i = 0; i < computerDeck.length - 1; i++){
 				computerDeck[i] = computerDeck[i+1];
 			}
+		
 			computerDeck[computerDeck.length - 1] = temp;
 			temp = userDeck[0];
 
@@ -159,7 +173,7 @@ var draw = function(){
 		firstRun = false;
 	}
 }
-
+draw();
 
 
 
