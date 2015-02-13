@@ -134,9 +134,11 @@ var draw = function(){
 			}
 			computerDeck[computerDeck.length - 1] = temp;
 			temp = userDeck[0];
+
 			for (var i = 0; i < userDeck.length - 1; i++){
 				userDeck[i] = userDeck[i+1];
 			}
+
 			userDeck[userDeck.length - 1] = temp;
 			console.log("userDeck After:\nLength is: " + userDeck.length + "\nContents: " + userDeck);
 			console.log("computerDeck After:\nLength is: " + computerDeck.length + "\nContents: " + computerDeck);
@@ -145,6 +147,7 @@ var draw = function(){
 			firstRun = false;
 		}
 	}
+
 	else {
 		shuffle(deck);
 		userDeck = deck.slice(0, 26);
@@ -160,7 +163,7 @@ var draw = function(){
 
 
 
-//Alec is working :>
+
 
 var restart = function() {
 	shuffle(deck);
@@ -171,8 +174,8 @@ var restart = function() {
 	document.getElementById("whole").style.backgroundColor = "#000066";
 	document.getElementById("UserNumber").innerHTML =26;
 	document.getElementById("ComNumber").innerHTML = 26;
-	document.getElementById("userCard").className = "cardDiv 2d";
-	document.getElementById("computerCard").className = "cardDiv 2h";
+	document.getElementById("userCard").className = "cardDiv twod";
+	document.getElementById("computerCard").className = "cardDiv twoh";
 	firstRun = true;
 }
 
