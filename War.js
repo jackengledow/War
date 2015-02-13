@@ -171,6 +171,8 @@ var restart = function() {
 	document.getElementById("whole").style.backgroundColor = "#000066";
 	document.getElementById("UserNumber").innerHTML =26;
 	document.getElementById("ComNumber").innerHTML = 26;
+	document.getElementById("userCard").className = "cardDiv 2d";
+	document.getElementById("computerCard").className = "cardDiv 2h";
 	firstRun = true;
 }
 
