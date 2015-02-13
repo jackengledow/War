@@ -193,3 +193,23 @@ var restart = function() {
 	firstRun = true;
 }
 
+
+if (userDeck.length == 52 && !firstRun) {
+	document.getElementById("whole").style.backgroundColor = "green";
+	document.getElementById("bodyDefault").style.display = "none";
+	document.getElementById("bodyWin").style.display = "block";
+}
+if (computerDeck.length == 52 && !firstRun) {
+	document.getElementById("whole").style.backgroundColor = "red";
+	document.getElementById("bodyDefault").style.display = "none";
+	document.getElementById("bodyLose").style.display = "block";
+}
+
+
+var playAgain = function() {
+	document.getElementById("bodyDefault").style.display = "block";
+	document.getElementById("bodyLose").style.display = "none";
+	document.getElementById("bodyWin").style.display = "none";
+	restart();
+}
+	
