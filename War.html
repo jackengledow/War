@@ -7,7 +7,7 @@
 	</head>
 	<body class="whole" id="whole">
 
-			<div>				
+			<div class="bodyDefault" id="bodyDefault">				
 				<div id="userCardDiv" class="bigDiv">
 					<p class="cardText">You Drew:</p>
 					<div id="userCard" class="cardDiv twod">
@@ -20,7 +20,7 @@
 				
 				<div id="computerCardDiv" class="bigDiv">
 					<p class="cardText">The Computer Drew:</p>
-					<div id="computerCard" class="cardDiv twod">
+					<div id="computerCard" class="cardDiv twoh">
 					</div>
 				</div>
 
@@ -44,6 +44,15 @@
 					<button class="restartButton" onclick="restart();">Restart</button>
 				</div>
 
+			</div>
+
+			<div class="bodyWin" id="bodyWin">
+				<p>Congratulations, You Win!</p>
+				<button>Play Again?</button>
+			</div>
+			<div class="bodyLose" id="bodyLose">
+				<p>Sorry, You Lose.</p>
+				<button>Play Again?</button>
 			</div>
 			<script src="War.js"></script>	
 	</body>

@@ -230,3 +230,14 @@
 	font-size: 60px;
 	margin-left: 170px;
 }
+.bodyDefault {
+	display: block;
+}
+.bodyWin {
+	display: none;
+	background-color: green;
+}
+.bodyLose {
+	display: none;
+	background-color: red;
+}
