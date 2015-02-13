@@ -88,15 +88,12 @@ var draw = function(){
 			document.getElementById("default").style.display = "none";
 			computerDeck.push(userDeck[i]);
 			userDeck.shift();
-			document.getElementById("ComNumber").innerHTML = computerDeck.length;
-			document.getElementById("UserNumber").innerHTML = userDeck.length;
 			console.log("userDeck After:\nLength is: " + userDeck.length + "\nContents: " + userDeck);
 			console.log("computerDeck After:\nLength is: " + computerDeck.length + "\nContents: " + computerDeck);
-			if (i == 26){
-				firstRun = false;
-			}
-			else {
-				firstRun = true;
+			document.getElementById("ComNumber").innerHTML = computerDeck.length;
+			document.getElementById("UserNumber").innerHTML = userDeck.length;
+			if ( i == 26){
+				i = 0;
 			}
 		}
 		else if (Math.floor(computerDeck[i]) < Math.floor(userDeck[i]) || ((Math.floor(computerDeck[i]) == 14) && (Math.floor(userDeck[i]) == 2))){
@@ -112,7 +109,9 @@ var draw = function(){
 			console.log("computerDeck After:\nLength is: " + computerDeck.length + "\nContents: " + computerDeck);
 			document.getElementById("ComNumber").innerHTML = computerDeck.length;
 			document.getElementById("UserNumber").innerHTML = userDeck.length;
-			firstRun = false;
+			if ( i == 26){
+				i = 0;
+			}
 		}
 		else if (Math.floor(computerDeck[i]) == Math.floor(userDeck[i])){
 			console.log("tie");
@@ -125,6 +124,9 @@ var draw = function(){
 			console.log("computerDeck After:\nLength is: " + computerDeck.length + "\nContents: " + computerDeck);
 			document.getElementById("ComNumber").innerHTML = computerDeck.length;
 			document.getElementById("UserNumber").innerHTML = userDeck.length;
+			if ( i == 26){
+				i = 0;
+			}
 			firstRun = false;
 		}
 	}
