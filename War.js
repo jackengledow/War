@@ -72,6 +72,20 @@ var shuffle = function(){
 	}
 }
 
+var winLose = function(){
+
+	if (userDeck.length == 52 && !firstRun) {
+		document.getElementById("whole").style.backgroundColor = "green";
+		document.getElementById("bodyDefault").style.display = "none";
+		document.getElementById("bodyWin").style.display = "block";
+	}
+	if (computerDeck.length == 52 && !firstRun) {
+		document.getElementById("whole").style.backgroundColor = "red";
+		document.getElementById("bodyDefault").style.display = "none";
+		document.getElementById("bodyLose").style.display = "block";
+	}
+}
+
 var draw = function(){
 	if (!firstRun){
 		
@@ -170,6 +184,7 @@ var draw = function(){
 		console.log(computerDeck[0]);
 		firstRun = false;
 	}
+	winLose();
 }
 draw();
 
@@ -189,18 +204,6 @@ var restart = function() {
 	document.getElementById("userCard").className = "cardDiv twod";
 	document.getElementById("computerCard").className = "cardDiv twoh";
 	firstRun = true;
-}
-
-
-if (userDeck.length == 52 && !firstRun) {
-	document.getElementById("whole").style.backgroundColor = "green";
-	document.getElementById("bodyDefault").style.display = "none";
-	document.getElementById("bodyWin").style.display = "block";
-}
-if (computerDeck.length == 52 && !firstRun) {
-	document.getElementById("whole").style.backgroundColor = "red";
-	document.getElementById("bodyDefault").style.display = "none";
-	document.getElementById("bodyLose").style.display = "block";
 }
 
 
